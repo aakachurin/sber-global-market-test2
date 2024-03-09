@@ -61,4 +61,14 @@ class CreditCardImplTest {
     );
   }
 
+  @Test
+  void debt(){
+    CreditCardImpl card = new CreditCardImpl(new Rubles(), 10D, "Зарплатная");
+    card.withdraw(15D);
+    Assertions.assertEquals(
+        5D,
+        card.getDebt()
+    );
+  }
+
 }
