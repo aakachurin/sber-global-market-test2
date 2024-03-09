@@ -1,9 +1,9 @@
 package com.aakachurin.products.cards;
 
-import com.aakachurin.products.AbstractBankProduct;
+import com.aakachurin.products.AbstractWithBalance;
 import com.aakachurin.products.currency.CountryCurrency;
 
-public class CreditCardImpl extends AbstractBankProduct<Double> implements CreditCard<Double> {
+public class CreditCardImpl extends AbstractWithBalance<Double> implements CreditCard<Double> {
 
   private final Double interestRate;
 

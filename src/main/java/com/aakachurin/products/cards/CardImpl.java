@@ -1,9 +1,9 @@
 package com.aakachurin.products.cards;
 
-import com.aakachurin.products.AbstractBankProduct;
+import com.aakachurin.products.AbstractWithBalance;
 import com.aakachurin.products.currency.CountryCurrency;
 
-public class CardImpl extends AbstractBankProduct<Double> implements Card<Double> {
+public class CardImpl extends AbstractWithBalance<Double> implements Card<Double> {
 
   public CardImpl(CountryCurrency currency, Double balance, String name) {
     super(currency, balance, name);

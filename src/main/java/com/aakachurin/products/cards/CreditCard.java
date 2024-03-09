@@ -1,6 +1,6 @@
 package com.aakachurin.products.cards;
 
-public interface CreditCard<T> extends Card<T> {
-  T getDebt();
+import com.aakachurin.products.actions.WithDebt;
 
+public interface CreditCard<T> extends Card<T>, WithDebt<T> {
 }

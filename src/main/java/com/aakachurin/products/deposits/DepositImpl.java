@@ -1,9 +1,9 @@
 package com.aakachurin.products.deposits;
 
-import com.aakachurin.products.AbstractBankProduct;
+import com.aakachurin.products.AbstractWithBalance;
 import com.aakachurin.products.currency.CountryCurrency;
 
-public class DepositImpl extends AbstractBankProduct<Double> implements Deposit<Double> {
+public class DepositImpl extends AbstractWithBalance<Double> implements Deposit<Double> {
 
   public DepositImpl(CountryCurrency currency, Double balance, String name) {
     super(currency, balance, name);
